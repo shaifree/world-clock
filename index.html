@@ -4,44 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://kit.fontawesome.com/ecbad2ce05.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.40/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock</title>
   </head>
   <body>
-    <h1>World Clock </h1>
-	<div class="container">
+    <h1>World Clock <i class="fa-solid fa-earth-americas"></i></h1>
+    <div class="container">
 		<select name="select-city" id="select-city">
 			<option value="">Select a city</option>
 			<option value="new-york">Los Angeles</option>
-			<option value="tokyo">Tokyo</option>
-			<option value="london">London</Lption>
+			<option value="tokyo">London</option>
+			<option value="london">Sydney</Lption>
 		</select>
-    <div class="city-date-time">
+    <div class="city-date-time" id="new-york">
       <div class="city-date">
-        <h2>New York </h2>
-        <p class="date">February 11th 2023</p>
+        <h2>New York 🇺🇸</h2>
+        <p class="date"></p>
       </div>
-      <div class="time">
-        5:01:38 <small>PM</small>
-      </div>
+      <div class="time"></div>
     </div>
-    <div class="city-date-time">
+    <div class="city-date-time" id="paris">
       <div class="city-date">
-        <h2>Paris</h2>
-        <p class="date">February 11th 2023</p>
+        <h2>Paris 🇫🇷</h2>
+        <p class="date"></p>
       </div>
-      <div class="time">
-        5:01:38 <small>PM</small>
-      </div>
+      <div class="time"></div>
     </div>
-    <div class="city-date-time">
+    <div class="city-date-time" id="tokyo">
       <div class="city-date">
-        <h2>London</h2>
-        <p class="date">February 11th 2023</p>
+        <h2>Tokyo 🇯🇵</h2>
+        <p class="date"></p>
       </div>
-      <div class="time">
-        5:01:38 <small>PM</small>
-      </div>
+      <div class="time"></div>
     </div>
 	</div>
     <footer>
